@@ -20,4 +20,19 @@ describe "fizzbuzz" do
 	it "knows 15 is not divisible by 1" do 
 		expect(is_divisible_by_fifteen?(1)).to be false
 	end
+	it "fizzbuzz, given 1 returns 1" do 
+		expect(fizzbuzz(1)).to be 1
+	end
+	it "fizzbuzz, given 3 returns fizz" do 
+		expect(fizzbuzz(3)).to eq "fizz"
+	end
+	it "fizzbuzz, given 5 returns buzz" do 
+		expect(fizzbuzz(5)).to eq "buzz"
+	end
+	it "fizzbuzz, given 15 returns fizzbuzz" do 
+		expect(fizzbuzz(15)).to eq "fizzbuzz"
+	end
+	it "fizzbuzz, given 2 returns 2"do 
+		expect(fizzbuzz(2)).to eq 2
+	end
 end
