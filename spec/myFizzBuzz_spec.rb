@@ -14,4 +14,10 @@ describe "fizzbuzz" do
 	it 'knows 5 is not divisible by 1' do 
 		expect(is_divisible_by_five?(1)).to be false
 	end	
+	it 'knows 15 is divisible by 15' do 
+		expect(is_divisible_by_fifteen?(15)).to be true
+	end
+	it "knows 15 is not divisible by 1" do 
+		expect(is_divisible_by_fifteen?(1)).to be false
+	end
 end
